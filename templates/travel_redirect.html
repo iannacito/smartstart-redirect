@@ -53,10 +53,13 @@
     .logo-area {
       display: flex;
       align-items: center;
-      gap: 10px;
     }
 
-    /* Inline SVG-approximated logo mark (shield + SS) */
+    .logo-img {
+      height: 70px;
+      width: auto;
+    }
+
     .logo-icon {
       width: 52px;
       height: 52px;
@@ -204,20 +207,7 @@
 
   <header>
     <div class="logo-area">
-      <!-- Logo approximation — replace src with your actual logo image URL if hosted -->
-      <svg class="logo-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M26 2 L48 12 L48 28 C48 40 36 50 26 52 C16 50 4 40 4 28 L4 12 Z"
-              fill="#1a1a1a"/>
-        <path d="M26 6 L44 14.5 L44 28 C44 38 34 47 26 49 C18 47 8 38 8 28 L8 14.5 Z"
-              fill="#c8a02a" opacity="0.15"/>
-        <text x="26" y="32" text-anchor="middle"
-              font-family="Arial" font-size="13" font-weight="700"
-              fill="#c8a02a" letter-spacing="1">SS</text>
-      </svg>
-      <div class="logo-text">
-        <span class="brand-name"><strong>SMART</strong>start</span>
-        <span class="brand-sub">Insurance Brokers</span>
-      </div>
+      <img src="/static/logo.jpg" alt="Smart Start Insurance Brokers" class="logo-img" />
     </div>
     <a class="header-phone" href="tel:+16473933474">+1-647-393-3474</a>
   </header>
